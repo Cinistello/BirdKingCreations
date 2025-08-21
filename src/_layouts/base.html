@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="script" href="main.js" />
+  <title>{% if title == "Home" %}Bird King Creations{% else %}{{ title }} | Bird King Creations{% endif %}</title>
+</head>
+<body>
+  {% include "header.html" %}
+  <main>
+    {{ content }}
+  </main>
+  {% include "footer.html" %}
+</body>
+</html>
