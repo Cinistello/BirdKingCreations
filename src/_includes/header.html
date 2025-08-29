@@ -2,8 +2,10 @@
 	<div class="header-container">
 		<h1 class="site-title">Bird King Creations</h1>
 		<nav>
-			<a href="/">Home</a>
-			<a href="/gallery">Gallery</a>
+			<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+			<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
+			<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
+			<a href="/" onclick="toggleHamburger();">More</a>
 		</nav>
 	</div>
 </header>
