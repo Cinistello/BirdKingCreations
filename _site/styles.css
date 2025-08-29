@@ -111,7 +111,7 @@ p.commission-status span {
 	font-weight: bold;
 }
 @media screen and (max-width: 880px) {
-	p, .image-container, h2 {
+	p, .image-container, .status-section {
 		padding: 0 30px;
 	}
 
