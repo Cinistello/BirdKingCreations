@@ -1,3 +1,6 @@
+testStyle {
+	font-size: 1.2rem;
+}
 @font-face {
 	font-family: "Insaniburger";
 	src: url("fonts/insaniburger.regular.ttf");
@@ -11,11 +14,6 @@ html, body {
 	padding: 0;
 	background-color: #006bd6;
 }
-@media (hover: none) {
-	html {
-		font-size: 25px;
-	}
-}
 body {
 	font-family: "Hyperlegible", Arial, sans-serif;
 	display: flex;
@@ -25,8 +23,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex: 1;
-	justify-content: flex-start;
 }
 header, footer {
 	color: white;
@@ -44,6 +40,19 @@ footer {
 }
 a {
 	color: #006bd6;
+}
+a.home {
+	text-decoration: none;
+	color: white;
+}
+button {
+	background-color: #006bd6;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 20px;
+	margin: 2px;
+	width: 200px;
 }
 .header-container {
 	max-width: 900px;
@@ -76,28 +85,13 @@ nav a.active {
 	flex-direction: column;
 	padding-top: 2rem;
 }
-.section.grey {
-	background-color: lightgrey;
-	padding-bottom: 2rem;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 .container {
 	max-width: 900px;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin: auto;
 	justify-content: space-between;
-}
-.container.status {
-	flex-direction: row-reverse;
-}
-.container span {
-	margin-right: 15px;
-	width: 40%;
-	flex-shrink: 0;
 }
 .status-banner {
 	text-align: center;
