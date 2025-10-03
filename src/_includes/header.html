@@ -1,12 +1,21 @@
 <header>
 	<div class="header-container">
-		<a class="home" href="/"><h1 class="site-title">Bird King Creations</h1></a>
+		<a class="home" href="/">
+			<h1 class="site-title">Bird King Creations</h1>
+		</a>
 		<nav>
-			<a class="home" href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+			<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
 			<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
 			<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
-			<!-- <a href="/tos/" class="{% if page.url == '/tos/' %}active{% endif %}">TOS</a> -->
-			<a href="javascript:void(0);" class="burgerIcon" onclick="toggleHamburger();">More</a>
+			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
 		</nav>
+		<div id="hamburgerMenu" class="hamburger-menu">
+			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
+			<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+			<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
+			<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
+			<a href="/tos/" class="{% if page.url == '/tos/' %}active{% endif %}">Terms of Service</a>
+		</div>
 	</div>
+
 </header>

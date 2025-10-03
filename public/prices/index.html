@@ -15,15 +15,24 @@
 <body>
     <header>
 	<div class="header-container">
-		<a class="home" href="/"><h1 class="site-title">Bird King Creations</h1></a>
+		<a class="home" href="/">
+			<h1 class="site-title">Bird King Creations</h1>
+		</a>
 		<nav>
-			<a class="home" href="/" class="">Home</a>
+			<a href="/" class="">Home</a>
 			<a href="/prices/" class="active">Prices</a>
 			<a href="/gallery/" class="">Gallery</a>
-			<!-- <a href="/tos/" class="">TOS</a> -->
-			<a href="javascript:void(0);" class="burgerIcon" onclick="toggleHamburger();">More</a>
+			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
 		</nav>
+		<div id="hamburgerMenu" class="hamburger-menu">
+			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
+			<a href="/" class="">Home</a>
+			<a href="/prices/" class="active">Prices</a>
+			<a href="/gallery/" class="">Gallery</a>
+			<a href="/tos/" class="">Terms of Service</a>
+		</div>
 	</div>
+
 </header>
     <main>
       <div class="section"><p>Placeholder</p></div>

@@ -15,38 +15,56 @@
 <body>
     <header>
 	<div class="header-container">
-		<a class="home" href="/"><h1 class="site-title">Bird King Creations</h1></a>
+		<a class="home" href="/">
+			<h1 class="site-title">Bird King Creations</h1>
+		</a>
 		<nav>
-			<a class="home" href="/" class="active">Home</a>
+			<a href="/" class="active">Home</a>
 			<a href="/prices/" class="">Prices</a>
 			<a href="/gallery/" class="">Gallery</a>
-			<!-- <a href="/tos/" class="">TOS</a> -->
-			<a href="javascript:void(0);" class="burgerIcon" onclick="toggleHamburger();">More</a>
+			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
 		</nav>
+		<div id="hamburgerMenu" class="hamburger-menu">
+			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
+			<a href="/" class="active">Home</a>
+			<a href="/prices/" class="">Prices</a>
+			<a href="/gallery/" class="">Gallery</a>
+			<a href="/tos/" class="">Terms of Service</a>
+		</div>
 	</div>
+
 </header>
     <main>
       <div class="section">
-			<p class="commission-status">Commission Status: <span>Closed</span></p>
-			<p>Next opening: TBD</p>
-			<p>Always open for handpaws!</p>
-
-			<button href="https://discord.gg/ngNkbjVh86">Discord</button>
-			<button href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue">Queue</button>
-
-		<div class="image-container king-point"><img src="images/king.png"
-				alt="Illustration of King (mascot) pointing at the commission status">
+	<div class="container">
+		<div class="container centered">
+			<div class="commission-status">Commission Status: <span>Closed</span></div>
+			<div>Next opening: TBD</div>
+			<div>Always open for handpaws!</div>
 		</div>
+		<div class="banner-container">
+			<div class="container centered buttons">
+					<a class="button" href="https://discord.gg/ngNkbjVh86">Discord</a>
+					<a class="button" href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue">Queue</a>
+			</div>
+			<div><img class="king-point" src="images/king.png"
+				alt="Illustration of King (mascot) pointing at the page content"></div>
+		</div>
+	</div>
 </div>
-<div class="section">
-
-			<p class="section-header">Meet the artist</p>
+<div class="section grey">
+	<div class="container row">
+		<span>
+			<h3>Meet the artist</h3>
 			<p>Bird King Creations is run by Cinistello, specializing in toony fursuits and fursuit accessories! I am
 				currently based in Southern California.</p>
-			<p>Contact me at <a href="mailto:birdkingcreations@gmail.com">birdkingcreations@gmail.com</a> or via Discord</p>
+			<p>Contact me @Cinistello via Discord or email at <a
+					href="mailto:birdkingcreations@gmail.com">birdkingcreations@gmail.com</a></p>
+		</span>
+		<img class="maker-meet" src="images/maker-meet.png"
+			alt="Illustration of the maker's fursona sitting at his studio desk, waving at the viewer">
 
-		<div class="image-container maker-meet"><img src="images/maker-meet.png"
-				alt="Illustration of the maker's fursona sitting at his studio desk">
+	</div>
 </div>
     </main>
     <footer>©2025 Bird King Creations</footer>
