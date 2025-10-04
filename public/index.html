@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles.css" />
-  <link rel="script" href="/main.js" />
+  <script src="/main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="/images/favicon.ico?" type="image/x-icon">
   <title>Bird King Creations</title>
@@ -18,21 +18,27 @@
 		<a class="home" href="/">
 			<h1 class="site-title">Bird King Creations</h1>
 		</a>
-		<nav>
-			<a href="/" class="active">Home</a>
-			<a href="/prices/" class="">Prices</a>
-			<a href="/gallery/" class="">Gallery</a>
-			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
-		</nav>
-		<div id="hamburgerMenu" class="hamburger-menu">
-			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
-			<a href="/" class="active">Home</a>
-			<a href="/prices/" class="">Prices</a>
-			<a href="/gallery/" class="">Gallery</a>
-			<a href="/tos/" class="">Terms of Service</a>
+		<a href="javascript:void(0);" id="burgerIcon" class="burger-icon" onclick="toggleHamburger();">
+			<i class="fa fa-bars" style="color: white; font-size: clamp(1.5rem, 5vw, 2.5rem);"></i>
+		</a>
+	</div>
+	<div id="hamburgerMenu" class="hamburger-menu">
+		<div class="header-container">
+			<nav>
+				<h2 class="nav-title">Pages</h2>
+				<a href="/" class="active">Home</a>
+				<a href="/prices/" class="">Prices</a>
+				<a href="/gallery/" class="">Gallery</a>
+				<a href="/tos/" class="">Terms of Service</a>
+				<h2 class="nav-title">Resources</h2>
+				<a href="/dtd-guide/" class="">DTD Guide</a>
+				<h2 class="nav-title">Links</h2>
+				<a href="https://discord.gg/ngNkbjVh86" target="_blank" rel="noopener">Discord</a>
+				<a href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue" target="_blank"
+					rel="noopener">Queue</a>
+			</nav>
 		</div>
 	</div>
-
 </header>
     <main>
       <div class="section">
@@ -41,14 +47,16 @@
 			<div class="commission-status">Commission Status: <span>Closed</span></div>
 			<div>Next opening: TBD</div>
 			<div>Always open for handpaws!</div>
+			<div class="dust">Forgive the dust, I'm still working on this new site</div>
 		</div>
 		<div class="banner-container">
-			<div class="container centered buttons">
+			<div class="container centered">
 					<a class="button" href="https://discord.gg/ngNkbjVh86">Discord</a>
 					<a class="button" href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue">Queue</a>
 			</div>
 			<div><img class="king-point" src="images/king.png"
-				alt="Illustration of King (mascot) pointing at the page content"></div>
+				alt="Illustration of King (mascot) pointing at the page content">
+			</div>
 		</div>
 	</div>
 </div>
@@ -68,7 +76,7 @@
 </div>
     </main>
     <footer>©2025 Bird King Creations</footer>
-<!-- TODO: Find my starting year and update this. Also create an automatic copyright year update. -->
+<!-- TODO: Find earliest year of copyright once photos of my work are added. Also create an automatic copyright year update for publishing? -->
   
 </body>
 </html>

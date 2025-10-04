@@ -3,19 +3,25 @@
 		<a class="home" href="/">
 			<h1 class="site-title">Bird King Creations</h1>
 		</a>
-		<nav>
-			<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-			<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
-			<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
-			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
-		</nav>
-		<div id="hamburgerMenu" class="hamburger-menu">
-			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
-			<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-			<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
-			<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
-			<a href="/tos/" class="{% if page.url == '/tos/' %}active{% endif %}">Terms of Service</a>
+		<a href="javascript:void(0);" id="burgerIcon" class="burger-icon" onclick="toggleHamburger();">
+			<i class="fa fa-bars" style="color: white; font-size: clamp(1.5rem, 5vw, 2.5rem);"></i>
+		</a>
+	</div>
+	<div id="hamburgerMenu" class="hamburger-menu">
+		<div class="header-container">
+			<nav>
+				<h2 class="nav-title">Pages</h2>
+				<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+				<a href="/prices/" class="{% if page.url == '/prices/' %}active{% endif %}">Prices</a>
+				<a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">Gallery</a>
+				<a href="/tos/" class="{% if page.url == '/tos/' %}active{% endif %}">Terms of Service</a>
+				<h2 class="nav-title">Resources</h2>
+				<a href="/dtd-guide/" class="{% if page.url == '/dtd-guide/' %}active{% endif %}">DTD Guide</a>
+				<h2 class="nav-title">Links</h2>
+				<a href="https://discord.gg/ngNkbjVh86" target="_blank" rel="noopener">Discord</a>
+				<a href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue" target="_blank"
+					rel="noopener">Queue</a>
+			</nav>
 		</div>
 	</div>
-
 </header>

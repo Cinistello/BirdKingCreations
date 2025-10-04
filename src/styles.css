@@ -6,6 +6,11 @@
 	font-family: "Hyperlegible";
 	src: url("fonts/AtkinsonHyperlegibleNext-VariableFont_wght.ttf");
 }
+.dust {
+	font-size: 0.8rem;
+	font-style: italic;
+	margin-top: 0.5em;
+}
 html, body {
 	margin: 0;
 	padding: 0;
@@ -47,16 +52,7 @@ a {
 a.home {
 	text-decoration: none;
 	color: white;
-}
-nav a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	margin: 0 5px;
-}
-nav a.active {
-	border-bottom: 2px solid white;
-	padding-bottom: 2px;
+	z-index: 30;
 }
 a.button {
 	box-sizing: border-box;
@@ -103,12 +99,16 @@ a.button {
 	margin: auto;
 	justify-content: space-between;
 	box-sizing: border-box;
-	padding: 0 2rem;
 }
 .container.row {
 	flex-direction: row;
 }
-
+ @media (max-width: 960px) { 
+	.section > .container {
+		margin: 0 2rem;
+		max-width: calc(100% - 4rem);
+	}
+}
 .container.centered {
 	align-items: center;
 }
@@ -117,6 +117,7 @@ a.button {
 }
 img {
 	width: 100%;
+	height: auto;
 	display: block;
 }
 img.king-point {
@@ -148,21 +149,51 @@ img.king-point {
 	}
 	img.maker-meet {
 		margin: 10px 0;
+		max-width: 100%;
 	}
 }
 .hamburger-menu {
 	height: 100%;
 	width: 0;
+	display: none;
+	/* width: 100%;
+	display: flex;  */
+	/* toggle to edit nav with preview */
 	position: fixed;
 	z-index: 20;
-	transition: 0.5s;
 	top: 0;
-	left: 0;
-	display: none;
+	right: 0;
 	flex-direction: column;
 	background-color: #006bd6;
 }
+.hamburger-menu .header-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 50px;
+	box-sizing: border-box;
+	font-size: 1.3rem;
+	padding-right: 30px;
+	width: 100%;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 5px;
+}
+nav a.active {
+	border-bottom: 2px solid white;
+	padding-bottom: 2px;
+}
 .hamburger-menu a {
+	font-size: 1rem;
+	margin: 8px 0;
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
@@ -170,4 +201,15 @@ img.king-point {
 .hamburger-menu a.active {
 	border-bottom: 2px solid white;
 	padding-bottom: 2px;
+}
+.burger-icon {
+    position: relative;
+    z-index: 30;
+	display: flex;
+	padding: 10px;
+}
+h2.nav-title {
+	margin-top: 50px;
+	margin-bottom: 0;
+	font-weight: bold;
 }

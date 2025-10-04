@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles.css" />
-  <link rel="script" href="/main.js" />
+  <script src="/main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="/images/favicon.ico?" type="image/x-icon">
   <title>Terms of Service | Bird King Creations</title>
@@ -18,47 +18,83 @@
 		<a class="home" href="/">
 			<h1 class="site-title">Bird King Creations</h1>
 		</a>
-		<nav>
-			<a href="/" class="">Home</a>
-			<a href="/prices/" class="">Prices</a>
-			<a href="/gallery/" class="">Gallery</a>
-			<a href="javascript:void(0);" class="burgerIcon" onclick="openHamburger();">More</a>
-		</nav>
-		<div id="hamburgerMenu" class="hamburger-menu">
-			<a href="javascript:void(0);" class="close-button" onclick="closeHamburger();">&times;</a>
-			<a href="/" class="">Home</a>
-			<a href="/prices/" class="">Prices</a>
-			<a href="/gallery/" class="">Gallery</a>
-			<a href="/tos/" class="active">Terms of Service</a>
+		<a href="javascript:void(0);" id="burgerIcon" class="burger-icon" onclick="toggleHamburger();">
+			<i class="fa fa-bars" style="color: white; font-size: clamp(1.5rem, 5vw, 2.5rem);"></i>
+		</a>
+	</div>
+	<div id="hamburgerMenu" class="hamburger-menu">
+		<div class="header-container">
+			<nav>
+				<h2 class="nav-title">Pages</h2>
+				<a href="/" class="">Home</a>
+				<a href="/prices/" class="">Prices</a>
+				<a href="/gallery/" class="">Gallery</a>
+				<a href="/tos/" class="active">Terms of Service</a>
+				<h2 class="nav-title">Resources</h2>
+				<a href="/dtd-guide/" class="">DTD Guide</a>
+				<h2 class="nav-title">Links</h2>
+				<a href="https://discord.gg/ngNkbjVh86" target="_blank" rel="noopener">Discord</a>
+				<a href="https://trello.com/b/ZJcplAnl/fursuit-commission-queue" target="_blank"
+					rel="noopener">Queue</a>
+			</nav>
 		</div>
 	</div>
-
 </header>
     <main>
-      <div class="section"><div class="container"><h1>Bird King Creations Terms of Service</h1>
-<p><i>Last updated: Feb 8th 2023</i></p>
+      <div class="section">
+	<div class="container">
+		<h1>Bird King Creations Terms of Service</h1>
+		<p><i>Last updated: Feb 8th 2023</i></p>
 
-<h2>Payments:</h2>
-<p>My primary payment method is paypal but I can also take cashapp for those who can’t or prefer not to use paypal! Any commission will not be started until it is fully paid off, and thus any suits with payment delays may be pushed back in the queue. Small part commission (such as tails or paws) must be paid in full and will be worked on in the downtime of large commissions. Large commissions are any that involve a head and/or body. Large commissions can be paid off via payment plan, with the minimum down payment of 30% to guarantee your slot. The rest of the amount owed can be split into equal monthly payments of your choice with a max of 6 months.</p>
+		<h2>Payments:</h2>
+		<p>My primary payment method is paypal but I can also take cashapp for those who can’t or prefer not to use
+			paypal! Any commission will not be started until it is fully paid off, and thus any suits with payment
+			delays may be pushed back in the queue. Small part commission (such as tails or paws) must be paid in full
+			and will be worked on in the downtime of large commissions. Large commissions are any that involve a head
+			and/or body. Large commissions can be paid off via payment plan, with the minimum down payment of 30% to
+			guarantee your slot. The rest of the amount owed can be split into equal monthly payments of your choice
+			with a max of 6 months.</p>
 
-<h2>Refunds:</h2>
-<p>The down payment will be used for buying materials and may not be refunded if I’ve already purchased materials needed for your suit if you choose to cancel. Otherwise, refund amount will be dependent on the amount of progress done on the suit and the reason for cancelling. I reserve the right to cancel any commissions I decide I no longer want to take and will give an appropriate refund. This can happen if I become no longer able to make your suit (full refund), or during the process if you become very rude or difficult to communicate with.</p>
+		<h2>Refunds:</h2>
+		<p>The down payment will be used for buying materials and may not be refunded if I’ve already purchased
+			materials needed for your suit if you choose to cancel. Otherwise, refund amount will be dependent on the
+			amount of progress done on the suit and the reason for cancelling. I reserve the right to cancel any
+			commissions I decide I no longer want to take and will give an appropriate refund. This can happen if I
+			become no longer able to make your suit (full refund), or during the process if you become very rude or
+			difficult to communicate with.</p>
 
-<h2>Wait Time:</h2>
-<p>I do not take any deadlines and any estimated completion times are not a guarantee. I will generally take up to a month on small part commissions, and anywhere from 2-12 months from final payment on larger commissions depending on their spot in the queue and its length, plus delays due to premades or prepping convention table stock.</p>
+		<h2>Wait Time:</h2>
+		<p>I do not take any deadlines and any estimated completion times are not a guarantee. I will generally take up
+			to a month on small part commissions, and anywhere from 2-12 months from final payment on larger commissions
+			depending on their spot in the queue and its length, plus delays due to premades or prepping convention
+			table stock.</p>
 
-<h2>Delivery:</h2>
-<p>I do not charge for shipping until the suit is completed so be prepared to pay for shipping at the end. I can give you an estimate early if requested if you need to make sure you’re prepared for the cost! I ship out of CA in the US so be aware of any import fees you may have for international shipments. I will do free at-con delivery if possible!</p>
+		<h2>Delivery:</h2>
+		<p>I do not charge for shipping until the suit is completed so be prepared to pay for shipping at the end. I can
+			give you an estimate early if requested if you need to make sure you’re prepared for the cost! I ship out of
+			CA in the US so be aware of any import fees you may have for international shipments. I will do free at-con
+			delivery if possible!</p>
 
-<h2>Repair:</h2>
-<p>If there is an immediate issue with the suit that is my mistake it will be fixed for free but I ask that you please pay for the shipping on your side and I will cover it for the way back. If I find that it is intentionally damaged by you I will charge a fee before returning the suit. I can also guide you in how to do small repairs and upkeep yourself if asked! After a month of receiving the suit any repairs can be done with shipping covered by the customer both ways and a fee based on the labor and materials needed. Please only send me clean suit parts that have been washed since their last time worn. Despite my efforts to have durable suits, seams can pop over time due to high stress areas and that's a lot easier to fix than ripped fur! It's good to have basic sewing knowledge for this to not have to worry about repair fees.
+		<h2>Repair:</h2>
+		<p>If there is an immediate issue with the suit that is my mistake it will be fixed for free but I ask that you
+			please pay for the shipping on your side and I will cover it for the way back. If I find that it is
+			intentionally damaged by you I will charge a fee before returning the suit. I can also guide you in how to
+			do small repairs and upkeep yourself if asked! After a month of receiving the suit any repairs can be done
+			with shipping covered by the customer both ways and a fee based on the labor and materials needed. Please
+			only send me clean suit parts that have been washed since their last time worn. Despite my efforts to have
+			durable suits, seams can pop over time due to high stress areas and that's a lot easier to fix than ripped
+			fur! It's good to have basic sewing knowledge for this to not have to worry about repair fees.
 
-<h2>Allergy Warning:</h2>
-<p>There are cats and vaping in the vicinity of my supplies so please be cautious to order from me if you have any severe allergies. I do my best to avoid direct contact, so that fur and foam do not get cat fur embedded in them, but both are in the same room as my supplies and it may still happen.
-</p></div></div>
+		<h2>Allergy Warning:</h2>
+		<p>There are cats and vaping in the vicinity of my supplies so please be cautious to order from me if you have
+			any severe allergies. I do my best to avoid direct contact, so that fur and foam do not get cat fur embedded
+			in them, but both are in the same room as my supplies and it may still happen.
+		</p>
+	</div>
+</div>
     </main>
     <footer>©2025 Bird King Creations</footer>
-<!-- TODO: Find my starting year and update this. Also create an automatic copyright year update. -->
+<!-- TODO: Find earliest year of copyright once photos of my work are added. Also create an automatic copyright year update for publishing? -->
   
 </body>
 </html>
