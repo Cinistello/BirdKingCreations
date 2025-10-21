@@ -102,9 +102,17 @@ a.button {
 	margin: auto;
 	justify-content: space-between;
 	box-sizing: border-box;
+	align-items: flex-start;
 }
 .container.row {
 	flex-direction: row;
+}
+.container.row > span {
+	width: 50%;
+}
+.container.row > img {
+	width: 50%;
+	height: auto;
 }
  @media (max-width: 960px) { 
 	.section > .container {
@@ -137,6 +145,7 @@ img.king-point {
 .banner-container {
 	display: flex;
 	flex-direction: row-reverse;
+	width: 100%;
 }
 @media (max-width: 600px) {
 	.banner-container {
