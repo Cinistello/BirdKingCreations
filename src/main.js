@@ -4,7 +4,7 @@ function toggleHamburger() {
 
 	if (menuStyle.display === "none") {
 		menu.style.display = "flex";
-		menu.style.width = "100%";
+		menu.style.width = "40%";
 		document.body.style.overflow = 'hidden';
 	}
 	else {

@@ -5,7 +5,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts/");
 
   return {
-    pathPrefix: "/BirdKingCreations/",
     dir: {
       input: "src",
       output: "public",

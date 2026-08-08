@@ -9,12 +9,13 @@
 .dust {
 	font-size: 0.8rem;
 	font-style: italic;
-	margin-top: 0.5em;
+	margin-top: 1em;
 }
 html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #006bd6;
+	overflow-y: overlay;
 }
 body {
 	font-family: "Hyperlegible", Arial, sans-serif;
@@ -106,18 +107,33 @@ a.button {
 }
 .container.row {
 	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1.5rem;
 }
-.container.row > span {
-	width: 50%;
+.container.row > * {
+	flex: 1 1 0;
+	min-width: 0;
 }
 .container.row > img {
-	width: 50%;
+	max-width: 100%;
 	height: auto;
 }
  @media (max-width: 960px) { 
 	.section > .container {
 		margin: 0 2rem;
 		max-width: calc(100% - 4rem);
+	}
+}
+@media (max-width: 900px) {
+	.container.row {
+		flex-direction: column;
+	}
+	.container.row > * {
+		width: 100%;
+	}
+	img.maker-meet {
+		max-width: 100%;
 	}
 }
 .container.centered {
